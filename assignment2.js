@@ -22,3 +22,27 @@ const mod = (num, div) => {
     const res = (num / div) | 0; // coerce to int
     return num - (res * div);
 }
+
+
+
+// palindrome
+let s = "madam and deed are some palindormes";
+s = s + " ";
+str = ""
+revs = ""
+for (i of s) {
+    if (i != " ") {
+        str = i + str
+        revs = revs + i
+        if (s == revs) {
+            console.log(str + "is a palindrome");
+        }
+        else {
+            console.log(str + "is not a palindrome");
+        }
+    }
+    else {
+        str = ""
+        revs = ""
+    }
+}
